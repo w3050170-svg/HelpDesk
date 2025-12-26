@@ -1,0 +1,260 @@
+/* Dashboard.css */
+.dashboard-container {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl; /* תמיכה בעברית */
+}
+
+.logout-button {
+    float: left;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #a71d2a;
+}
+
+.create-ticket-box {
+    background-color: #f0f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #b3d7ff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* חשוב מאוד למניעת חריגה מהרוחב */
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.ticket-table th, .ticket-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: right;
+}
+
+.ticket-table th {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.ticket-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.admin-alert {
+    background-color: #fff3cd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ffeeba;
+    color: #856404;
+}
+
+/* Dashboard.css */
+
+.dashboard-container {
+    padding: 30px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+/* כרטיס שמכיל את הטבלה */
+.table-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-top: 20px;
+}
+
+/* עיצוב הטבלה */
+.ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.ticket-table th {
+    background-color: #f1f3f5;
+    color: #495057;
+    padding: 15px;
+    text-align: right;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.ticket-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+/* אפקט שורה עוברת */
+.ticket-table tr:hover {
+    background-color: #f8f9ff;
+    transition: 0.2s;
+}
+
+/* Dashboard.css */
+
+.dashboard-container {
+    padding: 30px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+/* כרטיס שמכיל את הטבלה */
+.table-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-top: 20px;
+}
+
+/* עיצוב הטבלה */
+.ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.ticket-table th {
+    background-color: #f1f3f5;
+    color: #495057;
+    padding: 15px;
+    text-align: right;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.ticket-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+/* אפקט שורה עוברת */
+.ticket-table tr:hover {
+    background-color: #f8f9ff;
+    transition: 0.2s;
+}
+
+
+/* עיצוב הבועות בטבלה */
+.status-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.status-open {
+    background-color: #e6fcf5;
+    color: #0ca678;
+    border: 1px solid #b2f2bb;
+}
+
+.status-closed {
+    background-color: #fff5f5;
+    color: #fa5252;
+    border: 1px solid #ffa8a8;
+}
+
+.priority-text {
+    font-weight: 500;
+    color: #495057;
+}
+
+.text-danger {
+    color: #e03131;
+    font-weight: 700;
+}
+
+/* Dashboard.css */
+
+.dashboard-container {
+    max-width: 1000px;       /* מגביל את הרוחב כדי שלא יתפזר מדי */
+    margin: 40px auto;      /* הקסם: margin auto ממרכז אלמנטים אופקית */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    direction: rtl;         /* מוודא שהעברית מיושרת לימין בתוך המרכז */
+}
+
+/* מוודא שכל גוף האתר נותן רקע אפור עדין מאחורי ה-Dashboard הלבן */
+body {
+    background-color: #f4f7f6;
+    margin: 0;
+}
+/* רקע כללי נקי ויוקרתי */
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* כרטיסי הסטטיסטיקה */
+.stat-card {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* הטבלה המודרנית */
+.ticket-table {
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.ticket-table th {
+    background-color: #f8f9fa;
+    color: #5f6368;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}

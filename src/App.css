@@ -1,0 +1,158 @@
+#root {
+    width: 100%;
+    display: block; /* מבטל השפעות של גריד או פלקס על כל האתר */
+}
+/* עיצוב כללי */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+}
+
+/* מיכל מרכזי לדפי לוגין ורישום */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* שדות קלט (Inputs) */
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* כפתורים */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 15px;
+}
+
+/* מרכז את כל התוכן של הדף */
+.auth-container {
+    display: flex;
+    justify-content: center; /* ממרכז אופקית */
+    align-items: center;     /* ממרכז אנכית */
+    min-height: 100vh;      /* תופס את כל גובה המסך */
+    background-color: #f4f7f6;
+    margin: 0;
+}
+
+/* הכרטיס הלבן */
+.auth-card {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* שלא יהיה רחב מדי */
+    text-align: center;
+}
+
+/* עיצוב הכותרת בתוך הכרטיס */
+.auth-card h2 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* זה הקוד שימרכז הכל באמת */
+.auth-container {
+    display: flex;
+    justify-content: center; /* מרכז אופקי */
+    align-items: center;     /* מרכז אנכי */
+    
+    /* הגדרות קריטיות למרכז המסך */
+    width: 100vw;            
+    height: 100vh;           
+    position: fixed;         /* מבטיח שזה יתייחס לכל חלון הדפדפן */
+    top: 0;
+    left: 0;
+    
+    background-color: #f4f7f6; /* צבע רקע עדין לכל הדף */
+    margin: 0;
+    padding: 0;
+    z-index: 1000;           /* מוודא שזה מעל הכל */
+}
+
+.auth-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;        /* שומר על גודל כרטיס יפה */
+    text-align: center;
+    z-index: 1001;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+
+    /* כאן הקסם קורה: */
+    direction: ltr;      /* כיוון כתיבה משמאל לימין */
+    text-align: left;    /* הצמדת הטקסט לצד שמאל */
+}
+
+/* אם תרצי שרק בתיאור הטיקט (בדאשבורד) הטקסט יהיה בעברית: */
+.form-textarea {
+    direction: rtl;
+    text-align: right;
+}
+
+.form-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
