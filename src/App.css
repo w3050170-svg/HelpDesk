@@ -2,6 +2,7 @@
     width: 100%;
     display: block; 
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -14,7 +15,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    width: 100vw;            
+    height: 100vh;           
+    position: fixed;      
+    top: 0;
+    left: 0;
+    background-color: #f4f7f6; 
+    z-index: 1000;
 }
 
 .auth-card {
@@ -25,6 +32,13 @@ body {
     width: 100%;
     max-width: 400px;
     text-align: center;
+    z-index: 1001;
+}
+
+.auth-card h2 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 24px;
 }
 
 .form-input, .form-textarea {
@@ -35,11 +49,23 @@ body {
     border-radius: 6px;
     box-sizing: border-box;
     font-size: 16px;
-    transition: border-color 0.3s;
+    transition: all 0.3s;
 }
 
-.form-input:focus {
+.form-input {
+    direction: ltr;     
+    text-align: left;    
+}
+
+.form-textarea {
+    direction: rtl;
+    text-align: right;
+    min-height: 100px;
+}
+
+.form-input:focus, .form-textarea:focus {
     border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
     outline: none;
 }
 
@@ -67,79 +93,4 @@ body {
     cursor: pointer;
     text-decoration: underline;
     margin-top: 15px;
-}
-
-.auth-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center;    
-    min-height: 100vh;      
-    background-color: #f4f7f6;
-    margin: 0;
-}
-
-.auth-card {
-    background: white;
-    padding: 30px 40px;
-    border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-}
-
-/* עיצוב הכותרת בתוך הכרטיס */
-.auth-card h2 {
-    margin-bottom: 25px;
-    color: #333;
-    font-size: 24px;
-}
-
-.auth-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;     
-    width: 100vw;            
-    height: 100vh;           
-    position: fixed;      
-    top: 0;
-    left: 0;
-    background-color: #f4f7f6; 
-    margin: 0;
-    padding: 0;
-    z-index: 1000;
-}
-
-.auth-card {
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    width: 100%;
-    max-width: 400px;       
-    text-align: center;
-    z-index: 1001;
-}
-
-.form-input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    box-sizing: border-box;
-    font-size: 16px;
-    direction: ltr;     
-    text-align: left;    
-}
-
-.form-textarea {
-    direction: rtl;
-    text-align: right;
-}
-
-.form-input:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
-    outline: none;
 }
