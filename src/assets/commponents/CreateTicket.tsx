@@ -17,7 +17,6 @@ const CreateTicket = () => {
         headers: { Authorization: `Bearer ${token}` }
       });
       
-      // ה"וואו" של SweetAlert
       Swal.fire({
         title: 'נשלח בהצלחה!',
         text: 'הטיקט שלך בטיפול',
